@@ -22,4 +22,5 @@
 - Can only be updated by using dispatch()
 - Can add listeners that get invoked when state changes
 
-##
+## Action
+- A piece of data that contains the information required to make a state update
