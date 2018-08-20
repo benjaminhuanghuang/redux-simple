@@ -1,3 +1,7 @@
+
+/*
+    Involove action
+*/
 const merge = (prev, next) => {
     return Object.assign({}, prev, next)
 }

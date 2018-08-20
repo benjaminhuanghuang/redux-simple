@@ -7,9 +7,8 @@ const reducer = (state, update) => {
     return merge(state, update);
 }
 
-
-
-
+// Responsible for maintaining state - getState()
+// Can only be updated by using dispatch(), dispatch calls reducer to update
 class Store{
     constructor(reducer, initState){
         this.reducer = reducer;
