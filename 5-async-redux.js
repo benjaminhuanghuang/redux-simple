@@ -13,8 +13,8 @@ class Store {
         return this.state
     }
 
-    dispatch(update) {
-        this.state = this.reducer(this.state, update)
+    dispatch(action) {
+        this.state = this.reducer(this.state, action)
     }
 }
 
@@ -36,6 +36,8 @@ const userReducer = (state, action) => {
     return state
 }
 
+// Main reducer
+// Return a new state, call reducer for each sub state
 const reducer = (state, action) => ({
     user: userReducer(state.user, action),
     contacts: contactReducer(state.contacts, action),

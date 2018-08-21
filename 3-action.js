@@ -37,7 +37,6 @@ class Store {
     dispatch(action) {
         this.state = this.reducer(this.state, action);
     }
-
 }
 
 const DEFATUL_STATE = {
