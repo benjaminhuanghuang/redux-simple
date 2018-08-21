@@ -40,6 +40,7 @@ const userReducer = (state, action) => {
 }
 
 // Main reducer
+// Return a new state, call reducer for each sub state
 const reducer = (state, action) => ({
     user: userReducer(state.user, action),
     contacts: contactReducer(state.contacts, action),
